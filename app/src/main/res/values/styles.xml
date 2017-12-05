@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:displayOptions">showTitle</item>
+
+    </style>
+
+    <!--z自定义标题栏主题-->
+
+    <style name ="CustomWindowTitleBackground">
+        　　        <item name ="android:background">#1F497D</item>
+    </style>
+    <style name="title"  parent="android:Theme">
+        　　      <item name ="android:windowTitleSize">45dp</item>
+        　　      <item name ="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+</resources>

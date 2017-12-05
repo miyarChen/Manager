@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">尺素</string>
+    <string name="app_welcome_content">呼儿烹鲤鱼，中有尺素书</string>
+
+    <!--Label_activity-->
+    <string name="title_activity_order">订单</string>
+    <string name="sales_statistics_app_name">销售统计</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_personal_information">个人信息</string>
+
+    <string name="title_search">搜索</string>
+    <string name="title_add">添加</string>
+
+    <!--底部菜单栏-->
+    <string name="home_menu_name">首页</string>
+    <string name="classify_menu_name">分类</string>
+    <string name="me_menu_name">我</string>
+
+    <!--首页-->
+    <string name="home_text_name">WELCOME!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_home_fragment">Hello home fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_classify_fragment">Hello classify fragment</string>
+
+    <string name="hello_me_fragment">Hello me fragment</string>
+    <string name="home_head">head</string>
+
+    <string name="nickname">昵称</string>
+    <string name="head_portrait_content_description_name">head_portrait</string>
+    <string name="user_description_iv">user_description_iv</string>
+
+    <string name="photo_album_name">相册</string>
+    <string name="collect_name">收藏</string>
+
+    <string name="head_portrait_name">头像</string>
+    <string name="nickname_content">可可</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>
