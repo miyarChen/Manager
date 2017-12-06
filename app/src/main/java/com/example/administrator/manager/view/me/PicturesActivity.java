@@ -25,7 +25,7 @@ public class PicturesActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);//ActionBar显示返回箭头按钮
         actionBar.setTitle("图片");//设置actionBar上的标题为"图片"
-        actionBar.setElevation(0);
+        actionBar.setElevation(0);//取消actionBar的阴影
 
         gv_system_pictures = (GridView) findViewById(R.id.gv_system_pictures);
     }
