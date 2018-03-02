@@ -1,20 +1,29 @@
 package com.example.administrator.manager.base;
 
 import android.graphics.Bitmap;
+<<<<<<< HEAD
 import android.graphics.BitmapFactory;
+=======
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
 import android.graphics.Path;
 import android.os.Looper;
 import android.os.Message;
 import android.renderscript.Type;
 import android.support.v4.util.LruCache;
+<<<<<<< HEAD
 import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
+=======
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
 import android.widget.ImageView;
 
 import java.util.LinkedList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+<<<<<<< HEAD
 import java.util.concurrent.Semaphore;
+=======
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
@@ -57,10 +66,16 @@ public class ImageLoader {
      */
     private Handler mUIHandler;
 
+<<<<<<< HEAD
     private Semaphore mSemaphorePoolThreadHandler = new Semaphore(0);
     public enum Type
     {
         FIFO,LIFO;
+=======
+    public enum Type
+    {
+        FIFI,LIFO;
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
     }
 
     private ImageLoader(int mThreadCount,Type type){
@@ -76,7 +91,10 @@ public class ImageLoader {
                     @Override
                     public void handleMessage(Message msg) {
                         //线程池去取出一个任务进行执行
+<<<<<<< HEAD
                         mThreadPool.execute(getTask());
+=======
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
                     }
                 };
                 Looper.loop();
@@ -99,6 +117,7 @@ public class ImageLoader {
         mTaskQueue = new LinkedList<Runnable>();
         mType = type;
     }
+<<<<<<< HEAD
 
     /**
      * 从任务队列取出一个方法
@@ -113,6 +132,8 @@ public class ImageLoader {
         }
         return null;
     }
+=======
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
     private static ImageLoader getmInstance(){
         if (mInstance == null){
             synchronized (ImageLoader.class){
@@ -125,7 +146,11 @@ public class ImageLoader {
     }
 
     /**
+<<<<<<< HEAD
      * 根据path为imageView设置图片
+=======
+     * 根据path为imageView设置哎图片
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
      * @param path
      * @param imageView
      */
@@ -160,6 +185,7 @@ public class ImageLoader {
             message.obj = holder;
             mUIHandler.sendMessage(message);
         }else {
+<<<<<<< HEAD
             addTask(new Runnable({
                 @Override
                 public void run()
@@ -291,6 +317,14 @@ public class ImageLoader {
             e.printStackTrace();
         }
         mPoolThreadHandler.sendEmptyMessage(0x110);
+=======
+
+        }
+    }
+
+    private void addTasks(Runnable runnable){
+
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
     }
     /**
      * 根据path在缓存中获取bitma
@@ -301,10 +335,13 @@ public class ImageLoader {
         return mLruCache.get(key);
     }
 
+<<<<<<< HEAD
     private class ImageSize{
         int width;
         int height;
     }
+=======
+>>>>>>> eb625b4347aaff26ab2b2719a5300a3acaa50bd7
     private class ImgBeanHolder{
         Bitmap bitmap;
         ImageView imageView;
